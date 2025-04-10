@@ -1,0 +1,14 @@
+services:
+  sam-backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sam-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./segmentaciones_guardadas:/app/segmentaciones_guardadas
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1
+      - DEBIAN_FRONTEND=noninteractive

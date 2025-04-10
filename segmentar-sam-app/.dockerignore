@@ -1,0 +1,22 @@
+# Archivos/directorios ignorados por Docker
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.log
+.env
+.env.*
+.git/
+.gitignore
+.DS_Store
+.vscode/
+node_modules/
+*.zip
+*.tar
+*.tar.gz
+*.pth
+*.ipynb
+*.bak
+segmentaciones_guardadas/
+*.json
